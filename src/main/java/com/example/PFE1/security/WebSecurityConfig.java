@@ -58,17 +58,29 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/api/users/rechercherUser").permitAll()
         .antMatchers("/api/users/deleteUser/{userId}").permitAll()
         .antMatchers("/api/users/checkMail").permitAll()
-        .antMatchers("/api/lignes/createLigne").permitAll()
-        .antMatchers("/api/lignes/getAllLignes").permitAll()
-        .antMatchers("/api/lignes/{id}").permitAll()
-        .antMatchers("/api/lignes/updateLigne/{id}").permitAll()
-        .antMatchers("/titres/createTitre").permitAll() 
-        .antMatchers("/titres/deleteTitre/{id}").permitAll()
-        .antMatchers("/titres/getAllTitres").permitAll()
-        .antMatchers("/titres/updateTitre/{id}").permitAll()
-        .antMatchers("/titres/{id}").permitAll()
-        .antMatchers("/districts/createDistrict/").permitAll()
         .antMatchers("/api/email/**").permitAll()
+        .antMatchers("/api/agents/**").permitAll()
+        .antMatchers("/api/lignes/**").permitAll()
+        .antMatchers("/api/bcns/**").permitAll()
+        .antMatchers("/api/caissiers/**").permitAll()
+        .antMatchers("/api/districts/**").permitAll()
+        .antMatchers("/api/feuilles/**").permitAll()
+        .antMatchers("/api/fonctions/**").permitAll()
+        .antMatchers("/api/groupes/**").permitAll()
+        .antMatchers("/api/ligne_bcns/**").permitAll()
+        .antMatchers("/api/ligne_feuille/**").permitAll()
+        .antMatchers("/api/ligne_ravitaillements/**").permitAll()
+        .antMatchers("/api/ravitaillements/**").permitAll()
+        .antMatchers("/api/titres/**").permitAll()
+        .antMatchers("/api/tours/**").permitAll()
+        .antMatchers("/api/typeTitres/**").permitAll()
+
+        
+      
+               
+
+       
+        
        
 
 

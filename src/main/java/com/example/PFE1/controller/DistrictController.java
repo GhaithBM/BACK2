@@ -18,6 +18,7 @@ public class DistrictController {
     public District createDistrict(@RequestBody District district) {
         return districtService.createDistrict(district);
     }
+    
 
     @GetMapping("/{id}")
     public District getDistrictById(@PathVariable Long id) {
